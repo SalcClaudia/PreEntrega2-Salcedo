@@ -1,9 +1,33 @@
-html {
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 /*navbar*/
+.navbar {
+    background-color: #191919;
+}
 
+.navbar-brand {
+    padding-left: 15px;
+}
+
+.navbar-brand {
+    color: aliceblue;
+}
+
+.navbar-brand:hover {
+    background-color: transparent;
+    color: burlywood;
+}
+
+.navbar-toggler {
+    border-color: aliceblue;
+}
+
+.navbar-toggler-icon {
+    border-color: aliceblue;
+}
 
 
 /*body*/
