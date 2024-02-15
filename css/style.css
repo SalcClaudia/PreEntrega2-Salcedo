@@ -69,6 +69,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -108,8 +109,20 @@ body {
     padding-left: 20px;
 }
 
-.col-md-4 p h2{
-padding-right: 20px;
+.col-md-4 p h2 {
+    padding-right: 20px;
+}
+
+.btn {
+    background-color: #191919;
+    color: azure;
+}
+
+.btn:hover {
+    background-color: burlywood;
+    color: #191919;
+    transition: 0.5s;
+    border-color: none;
 }
 
 .palm_container {
@@ -117,25 +130,47 @@ padding-right: 20px;
     height: 310px;
     padding-top: 5%;
     overflow: hidden;
-    padding-top: 35px;
+    padding-top: 40px;
 }
 
 .palm_container img {
     width: 100%;
     height: auto;
+    border: solid #191919 3px;
 }
 
 .iframe {
     width: 40%;
-    height: 500px;
-    padding-top: 60px;
+    height: 300px;
+    margin-top: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
     overflow: hidden;
+    border: solid #191919 5px;
+    border-radius: 10px;
 }
 
 .iframe iframe {
     object-fit: cover;
+    width: 100%;
+
 }
+
+@media (max-width: 800px) {
+    .iframe {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .container-md{
+        width: 100%;
+    }
+}
+
 
 /*WhatsApp icon*/
 
@@ -148,17 +183,6 @@ padding-right: 20px;
     right: 15px;
 }
 
-/*footer*/
-
-footer {
-    background-color: #191919;
-    height: 50px;
-}
-
-footer a {
-    align-items: center;
-    text-align: center;
-}
 
 /*Reservas*/
 
@@ -267,4 +291,23 @@ footer a {
     margin: auto;
     margin-top: 50px;
     overflow: hidden;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    background-color: #191919;
+    height: 100px;
+}
+
+footer a {
+    align-items: center;
+    text-align: center;
+}
+
+.correo-container{
+    color: azure;
+    align-items: flex-end;
+    text-align: right;
 }
