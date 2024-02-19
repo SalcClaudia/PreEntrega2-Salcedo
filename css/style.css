@@ -38,10 +38,14 @@ body {
 
 .navbar-toggler {
     border-color: azure;
+    background-color: azure;
 }
 
-.navbar-toggler-icon {
-    border-color: azure;
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
 }
 
 .nav-list {
@@ -125,6 +129,12 @@ body {
     border-color: none;
 }
 
+.index-h2, .iframe-index{
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 20px;
+}
+
 .palm_container {
     width: 100%;
     height: 310px;
@@ -136,10 +146,9 @@ body {
 .palm_container img {
     width: 100%;
     height: auto;
-    border: solid #191919 3px;
 }
 
-.iframe {
+.iframe-index {
     width: 40%;
     height: 300px;
     margin-top: 50px;
@@ -150,7 +159,7 @@ body {
     border-radius: 10px;
 }
 
-.iframe iframe {
+.iframe-index iframe {
     object-fit: cover;
     width: 100%;
 
@@ -166,7 +175,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .container-md{
+    .container-md {
         width: 100%;
     }
 }
@@ -175,8 +184,8 @@ body {
 /*WhatsApp icon*/
 
 .whats {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     position: fixed;
     bottom: 15px;
@@ -297,17 +306,38 @@ body {
 
 footer {
     display: flex;
+    justify-content: space-between;
     background-color: #191919;
-    height: 100px;
-}
-
-footer a {
-    align-items: center;
-    text-align: center;
-}
-
-.correo-container{
     color: azure;
-    align-items: flex-end;
-    text-align: right;
+    height: 300px;
+    width: 100%;
+}
+
+.footer-title {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+
+.footer-links,
+.footer-socials,
+.footer-contact {
+    color: azure;
+    padding-top: 50px;
+    margin-right: 50px;
+}
+
+.footer-links,
+.footer-socials,
+.footer-contact, a{
+list-style-type: none;
+text-decoration: none;
+color: azure;
+}
+
+.footer-links,
+.footer-socials,
+.footer-contact, a:hover{
+color: burlywood;
+transition: 0.5s;
 }
